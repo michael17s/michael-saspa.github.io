@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Buy and Sell</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"> <img src="1.jpg" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="menu-button"><a href="signin.html">Login</a></li>
+                <li class="menu-button"><a href="signup.html">Create</a></li>
+                <li class="cart-container"><a href=""><img src="cart.png" alt="Cart Logo"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box">
+        <form action="search.html" onsubmit="return submitForm()">
+            <input type="search" id="search" placeholder="Search" />
+          </form>    </div>
+    <div>
+        <nav class="menu-container">
+            <ul class="menu">
+                <li><a href="women.html">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Girl</a></li>
+                <li><a href="#">Boy</a></li>
+                <li><a href="#">Baby</a></li>
+                <li><a href="#">School</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="column left" style="background-color:#f1efeb;">
+          <h2>Filter Search</h2>
+          <p>Category</p>
+                     <div class="ratingcolumn">
+                      <label for="rating-1">
+                          <input type="checkbox" id="rating-1" name="rating" value="1">Catagory
+                      </label>
+                      <label for="rating-2">
+                          <input type="checkbox" id="rating-2" name="rating" value="2">Catagory
+                      </label>
+                      <label for="rating-3">
+                          <input type="checkbox" id="rating-3" name="rating" value="3">Catagory
+                      </label>
+                      <label for="rating-4">
+                          <input type="checkbox" id="rating-4" name="rating" value="4">Catagory
+                      </label>
+                      <label for="rating-5">
+                          <input type="checkbox" id="rating-5" name="rating" value="5">Catagory
+                      </label>
+                  </div>
+                  <hr style="border:3px solid #534f4f">
+      
+                  <p style="text-align: left;">RATING</p>
+                  <div class="star">
+                      <div class="rating1" style="padding: 10px;">
+                          <a href="">
+                              <span class="fa fa-star checked" style="color: yellow;"></span>
+                              <span class="fa fa-star checked" style="color: yellow;"></span>
+                              <span class="fa fa-star checked" style="color: yellow;"></span>
+                              <span class="fa fa-star checked" style="color: yellow;"></span>
+                              <span class="fa fa-star checked" style="color: yellow;"></span>
+                          </a>
+                      </div>
+                      <div class="rating2" style="padding: 10px;">
+                          <a href="">
+                              <span class="fa fa-star checked" style="color: yellow;"></span>
+                              <span class="fa fa-star checked" style="color: yellow;"></span>
+                              <span class="fa fa-star checked" style="color: yellow;"></span>
+                              <span class="fa fa-star checked" style="color: yellow;"></span>
+                              <span class="fa fa-star"></span>
+                          </a>
+                      </div>
+                      <div class="rating3" style="padding: 10px;">
+                          <a href="">
+                              <span class="fa fa-star checked" style="color: yellow;"></span>
+                              <span class="fa fa-star checked" style="color: yellow;"></span>
+                              <span class="fa fa-star checked" style="color: yellow;"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                          </a>
+                      </div>
+                      <div class="rating4" style="padding: 10px;">
+                          <a href="">
+                              <span class="fa fa-star checked" style="color: yellow;"></span>
+                              <span class="fa fa-star checked" style="color: yellow;"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star "></span>
+                              <span class="fa fa-star"></span>
+                          </a>
+                      </div>
+                      <div class="rating5" style="padding: 10px;">
+                          <a href="">
+                              <span class="fa fa-star checked" style="color: yellow;"></span>
+                              <span class="fa fa-star "></span>
+                              <span class="fa fa-star "></span>
+                              <span class="fa fa-star "></span>
+                              <span class="fa fa-star"></span>
+                          </a>
+                      </div>
+                  </div>
+                  <hr style="border:3px solid #534f4f">
+                  <p style="text-align: left;">Range of Price</p>
+                  <div class="containers">
+                      <form>
+                          <div class="input-box">
+                              <input type="number" placeholder="Range-mini $">
+                          </div>
+                          <div class="input-box">
+                              <input type="number" placeholder="Range-max $">
+                          </div>
+                          <button type="submit" class="submit-button">Submit</button>
+                      </form>
+                  </div>
+                  
+        </div>
+        <div class="column right" style="background-color:#f5f3de;">
+          <h2>Item search</h2>
+          <div class="button-box">
+            <div class="menu">
+              <ul>
+                <li class="dropdown">
+                    <a href="#" class="menu-button">Price</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Low to High</a></li>
+                      <li><a href="#">High to Low</a></li>
+                    </ul>
+                  </li>
+                <li>
+                  <a href="#" class="menu-button">Relevance</a>
+                </li>
+                <li>
+                  <a href="#" class="menu-button">Latest</a>
+                </li>
+    
+              </ul>
+            </div>
+          </div>
+          <div class="button-box">
+            <div class="previous-button">
+              <button onclick="changePage(-1)">Previous</button>
+            </div>
+            <div class="page-numbers">
+              <span class="page-number">1</span>
+              <span class="page-number">2</span>
+              <span class="page-number">4</span>
+              <span class="page-number">3</span>
+              <span class="page-number">6</span>
+              <span class="page-number">5</span>
+              <span class="page-number">7</span>
+              <span class="page-number">8</span>
+              <span class="page-number">1</span>
+              <span class="page-number">1</span>
+              <span class="page-number">1</span>
+              <span class="page-number">1</span>
+            </div>
+            <div class="next-button">
+              <button onclick="changePage(1)">Next</button>
+            </div>
+          </div>
+          <div class="product-container">
+              <div class="product-item">
+                  <a href="productdetail.html">
+                      <img src="swomen.png" alt="Item 1">
+                  </a>
+                  <h3>Item 1</h3>
+                  <p>Price: $10</p>
+              </div>
+              <div class="product-item">
+                  <a href="productdetail.html">
+                      <img src="swomen.png" alt="Item 2">
+                  </a>
+                  <h3>Item 2</h3>
+                  <p>Price: $20</p>
+              </div>
+              <div class="product-item">
+                  <a href="productdetail.html">
+                      <img src="swomen.png" alt="Item 3">
+                  </a>
+                  <h3>Item 3</h3>
+                  <p>Price: $30</p>
+              </div>
+              <div class="product-item">
+                  <a href="productdetail.html">
+                      <img src="swomen.png" alt="Item 4">
+                  </a>
+                  <h3>Item 4</h3>
+                  <p>Price: $40</p>
+              </div>
+              <div class="product-item">
+                  <a href="productdetail.html">
+                      <img src="swomen.png" alt="Item 1">
+                  </a>
+                  <h3>Item 1</h3>
+                  <p>Price: $10</p>
+              </div>
+              <div class="product-item">
+                  <a href="productdetail.html">
+                      <img src="swomen.png" alt="Item 2">
+                  </a>
+                  <h3>Item 2</h3>
+                  <p>Price: $20</p>
+              </div>
+              <div class="product-item">
+                  <a href="productdetail.html">
+                      <img src="swomen.png" alt="Item 3">
+                  </a>
+                  <h3>Item 3</h3>
+                  <p>Price: $30</p>
+              </div>
+              <div class="product-item">
+                  <a href="productdetail.html">
+                      <img src="swomen.png" alt="Item 4">
+                  </a>
+                  <h3>Item 4</h3>
+                  <p>Price: $40</p>
+              </div>
+          </div>
+      </div>
+        </div>
+      </div>
+    <div class="headerfooter">
+        <div class="text-column">
+            <h3>About BUY & SELL</h3>
+            <ul class="footer-list">
+                <li class="footer-list-item"><a href="#">About Us</a></li>
+                <li class="footer-list-item"><a href="#">BUY & SELL Blog</a></li>
+                <li class="footer-list-item"><a href="#">BUY & SELL Careers</a></li>
+                <li class="footer-list-item"><a href="#">BUY & SELL Policies</a></li>
+                <li class="footer-list-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="text-column">
+            <h3>CUSTOMER SERVICE</h3>
+            <ul class="footer-list">
+                <li class="footer-list-item"><a href="#">Help Centre</a></li>
+                <li class="footer-list-item"><a href="#">BUY & SEL Cares</a></li>
+                <li class="footer-list-item"><a href="#">Order Tracking</a></li>
+                <li class="footer-list-item"><a href="#">Return & Refund</a></li>
+                <li class="footer-list-item"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="text-column">
+            <h3>Social Impact</h3>
+            <ul class="footer-list">
+                <li class="footer-list-item"><a href="#"> Overview </a></li>
+                <li class="footer-list-item"><a href="#">People</a></li>
+                <li class="footer-list-item"><a href="#">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="text-column">
+            <h3>Payment</h3>
+            <ul class="footer-list">
+                <li class="footer-list-item">
+                    <img src="paypal.png" alt="PayPal">
+                    <img src="visa (1).png" alt="Visa">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2023 BUY & SELL. All rights reserved.</p>
+            </div>
+            <div class="footer-center">
+                <p>Privacy Notice | Terms of Use | Do Not Share My Personal Information | Partners</p>
+            </div>
+            <div class="footer-right">
+                <img src="facebook_d.png" alt="Facebook">
+                <img src="instagram_d.png" alt="instagram">
+                <img src="twitter.png" alt="Twitter">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

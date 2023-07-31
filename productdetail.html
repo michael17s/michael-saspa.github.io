@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Buy and Sell</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"> <img src="1.jpg" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="menu-button"><a href="signin.html">Login</a></li>
+                <li class="menu-button"><a href="signup.html">Create</a></li>
+                <li class="cart-container"><a href=""><img src="cart.png" alt="Cart Logo"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box">
+        <input type="search" id="search" placeholder="Search" />
+    </div>
+    <div>
+        <nav class="menu-container">
+            <ul class="menu">
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Girl</a></li>
+                <li><a href="#">Boy</a></li>
+                <li><a href="#">Baby</a></li>
+                <li><a href="#">School</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="columnsss" style="background-color:#ffffff;">
+            <h2>Column 1</h2>
+            <p>Some text..</p>
+            <div class="rows">
+                <div class="columnss">
+                    <h2>Column 1</h2>
+                    <p>Some text..</p>
+                    <div class="image-container">
+                        <img src="smen.jpg" alt="Image 1">
+                        <img src="smen.jpg" alt="Image 2">
+                        <img src="smen.jpg" alt="Image 3">
+                        <img src="smen.jpg" alt="Image 4">
+                        <img src="smen.jpg" alt="Image 5">
+                    </div>
+                </div>
+                <div class="columns">
+                    <h2>Column 2</h2>
+                    <div class="button-boxs">
+                        <div class="previous-button">
+                            <a href="#" onclick="changePage(-1)">
+                                <img src="arrws.png" alt="Previous" class="button-images">
+                            </a>
+                        </div>
+                        <div class="page-numbers">
+                            <span class="page-number">1</span>
+                            <span class="page-number">2</span>
+                            <span class="page-number">3</span>
+                            <span class="page-number">4</span>
+                            <span class="page-number">5</span>
+                            <!-- Other page numbers -->
+                        </div>
+                        <div class="next-button">
+                            <a href="#" onclick="changePage(1)">
+                                <img src="arrw.png" alt="Next" class="button-images">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="image-containers">
+                        <img src="smen.jpg" alt="Image 1">
+                    </div>
+                    <div class="rating11" style="padding: 10px;">
+                        <spam><strong>5.5</strong></spam>
+                        <span class="fa fa-star checked" style="color: rgb(255, 0, 0);"></span>
+                        <span class="fa fa-star checked" style="color: rgb(255, 8, 0);"></span>
+                        <span class="fa fa-star checked" style="color: rgb(255, 0, 0);"></span>
+                        <span class="fa fa-star checked" style="color: rgb(255, 0, 0);"></span>
+                        <span class="fa fa-star checked" style="color: rgb(255, 0, 0);"></span>
+                        <spam><strong>RATING 5555 SOLD 5555</strong></spam>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columnsss" style="background-color:#ffffff;">
+            <h2>Column 2</h2>
+            <p>Some text..</p>
+            <div class="rowss" style="background-color: aliceblue;">
+                <h1><strong>SAMPLE PRODUCT ITEM MEN</strong></h1></br>
+                <h1>
+                    <spam>Price $9999.00</spam>
+                </h1>
+                <h1>
+                    <spam>Shipping: US to Canada</spam>
+                </h1>
+                <h1>
+                    <spam>shipping fee: $99</spam>
+                </h1>
+                <spam>
+                    <h1 style="padding-top: 40px;"><strong>color:</strong></h1>
+                </spam>
+
+                <a href="#" class="menu-button">BLACK</a>
+                <a href="#" class="menu-button">PINK</a>
+                <a href="#" class="menu-button">WHITE</a>
+                <a href="#" class="menu-button">BLUE</a>
+                <a href="#" class="menu-button">YELLOW</a>
+
+                <div class="containerssss" style="padding-top: 50px;">
+                    <h1>
+                        Quantity
+                    </h1>
+                    <button class="quantity-btn" onclick="decrement()">-</button>
+                    <input class="quantity-input" type="number" value="0" id="quantity" min="0">
+                    <button class="quantity-btn" onclick="increment()">+</button>
+                    <spam><strong>9999 pieces avialable</strong></spam>
+                </div>
+                <div class="container">
+                    <div>
+                        <a href="signin.html" class="button add-to-cart-btn">
+                            Add to Cart
+                        </a>
+
+                        <a href="signin.html" class="button buy-now-btn">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="headerfooter">
+        <div class="text-column">
+            <h3>About BUY & SELL</h3>
+            <ul class="footer-list">
+                <li class="footer-list-item"><a href="#">About Us</a></li>
+                <li class="footer-list-item"><a href="#">BUY & SELL Blog</a></li>
+                <li class="footer-list-item"><a href="#">BUY & SELL Careers</a></li>
+                <li class="footer-list-item"><a href="#">BUY & SELL Policies</a></li>
+                <li class="footer-list-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="text-column">
+            <h3>CUSTOMER SERVICE</h3>
+            <ul class="footer-list">
+                <li class="footer-list-item"><a href="#">Help Centre</a></li>
+                <li class="footer-list-item"><a href="#">BUY & SEL Cares</a></li>
+                <li class="footer-list-item"><a href="#">Order Tracking</a></li>
+                <li class="footer-list-item"><a href="#">Return & Refund</a></li>
+                <li class="footer-list-item"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="text-column">
+            <h3>Social Impact</h3>
+            <ul class="footer-list">
+                <li class="footer-list-item"><a href="#"> Overview </a></li>
+                <li class="footer-list-item"><a href="#">People</a></li>
+                <li class="footer-list-item"><a href="#">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="text-column">
+            <h3>Payment</h3>
+            <ul class="footer-list">
+                <li class="footer-list-item">
+                    <img src="paypal.png" alt="PayPal">
+                    <img src="visa (1).png" alt="Visa">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2023 BUY & SELL. All rights reserved.</p>
+            </div>
+            <div class="footer-center">
+                <p>Privacy Notice | Terms of Use | Do Not Share My Personal Information | Partners</p>
+            </div>
+            <div class="footer-right">
+                <img src="facebook_d.png" alt="Facebook">
+                <img src="instagram_d.png" alt="instagram">
+                <img src="twitter.png" alt="Twitter">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
